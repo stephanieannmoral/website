@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Personal Website</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="shortcut icon" href="fav.jpg" type="image/x-icon" />
+</head>
+<body class="background">
+
+<div class="nav">
+	<a  class="a active" href="#">HOME</a>
+	<a  class="b" href="#">ABOUT ME</a>
+	<a  class="c" href="#">GALLERY</a>
+	<a  class="d" href="#">CONTACT</a>
+</div>
+
+<div class="content">
+<section>
+	<div class="home">
+		<h3>Social Media Influencer</h3>
+	</div>
+
+	<div class="aboutme">
+			 <font color="black">
+		<p><b>Student <br>
+          Pangasinan State University<br>
+          College of Computing Science <br>
+          Lingayen Campus <br>
+          Lingayen, Pangasinan <br>
+          Philippines, 2401</b>
+          </i></p>
+           <hr>
+
+ 		<h2>
+ 		 	<font color="brown">Basic Information</h2>
+
+  		<p>
+   			
+		   	 <font color="black"><Age: 19 <br>
+		    <b>Nationality:</b> Filipino <br>
+		    <b>Date of Birth:</b> July 13, 2000 <br>
+		    <b>Marital Status:</b> Single <br>
+		    <b>Language:</b> Tagalog, English <br>
+		    <b>Current Address:</b> #384 Domalandan West, Lingayen, Pangasinan <br>
+		    <b>Birthplace:</b> Agoo, La Union
+		<h2>
+			<font color="brown">Certificate</h2>
+ 			<font color="black"> <table border="1" cellpadding="3" style = "border-style: dashed">
+	<tr>
+		<td><b>Outstanding Performance Award Arts</b> (Performing Arts)</td>
+	</tr>
+		<td><b>Outstanding Performance Award Arts</b> (Videography)</td>
+	<tr>
+		<td><b>Outstanding Performance Award</b> (Campus Journalist)</td>	
+	</tr>
+		<td><b>Special Recognition Award</b> (Catholic Girl Scout of the Philippines)
+	<tr>
+		<td><b>Special Recognition Award</b> (Drum and Lyre Corps)</td>
+	</tr>
+ 	</table>
+
+  		<h2>
+  			<font color="brown">Education</h2>
+			<font color="black"><table border="1" cellpadding="2" style = "border-style: dashed">
+  	<tr>
+  		<td><b> Primary </b> <br>
+  		<td>St. Columban's Institute
+  		<br>Domalandan Center
+  		<br>Lingayen, Pangasinan
+  	</tr>
+  	<tr>
+		<td><b> Secondary </b></br>
+  		<td>General Academic Strand
+  		<br>St. Columban's Institute
+		<br>Domalandan Center
+  		<br>Lingayen,Pangasinan
+  	</tr>
+  	<tr>	
+  		<td><b>Tertiary</b> </br>
+  		<td> Information Technology
+   		<br>Pangasinan State University
+  		<br>Lingayen Pangasinan
+  	</tr>
+	</table>
+	</div>
+
+	<div class="gallery">
+		<div class="image">
+			<img src="image/a.jpg"/>
+		</div>
+
+		<div class="image">
+			<img src="image/b.jpg"/>
+		</div>
+
+		<div class="image">
+			<img src="image/c.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/d.jpg"/>
+		</div>
+
+		<div class="image">
+			<img src="image/e.jpg"/>
+		</div>
+
+		<div class="image">
+			<img src="image/f.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/g.jpg"/>
+		</div>
+
+		<div class="image">
+			<img src="image/h.jpg"/>
+		</div>
+
+		
+		
+		
+	</div>
+	
+	<div class="contactus"> 
+		<div class="contactform">
+			<form action="" method="post">
+				<input type="text" name="" class="inputtext" value="First Name">
+				<input type="text" name="" class="inputtext"  value="Last Name">
+				<input type="text" name="" class="inputtext"  value="Your Email">
+				<textarea cols="4" rows="6"  class="inputmessage" > Your Messages...!!
+				</textarea>
+				<input type="button" name="" class="submitbutton" value="Submit">
+			</form>
+		</div>
+	</div>
+</div>
+<div>
+	<!-- Site footer -->
+	<footer class="site-footer">
+	 
+
+		<div class="container"></div>
+		
+	  <div class="container">
+		<div class="row">
+
+			<p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+		 <a href="#">Stephanie</a>.
+			</p>
+		  </div>
+  
+		  <br>
+			<ul class="social-icons">
+	
+			  <li><a class="facebook" href="https://www.facebook.com/stephanieann.moral"><i class="fa fa-facebook-square"></i></a></li>
+			  <li><a class="twitter" href="https://twitter.com/stephanieannmrl"><i class="fa fa-twitter"></i></a></li>
+			  <li><a class="dribbble" href="https://www.instagram.com/stphnmoral/"><i class="fa fa-instagram"></i></a></li>
+			  
+			</ul>
+		  
+	  </div>
+  </footer>
+  </div>
+  
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("i am click");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		}); 
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutme = $('.aboutme'),
+		$gallery = $('.gallery'),
+		$contact = $('.contactus');
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutme.fadeOut();
+			$gallery.fadeOut();
+			$contact.fadeOut();
+		});
+		$b.click(function(){
+			$aboutme.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$contact.fadeOut();
+		});
+		$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$contact.fadeOut();
+		});
+		$d.click(function(){
+			$contact.fadeIn();
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$gallery.fadeOut();
+		});
+	});
+
+</script>
+
+</body>
+</html>
